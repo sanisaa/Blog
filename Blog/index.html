@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO MY WEBSITE</title>
+
+	<link rel="stylesheet" href="stylee.css">
+	<link rel="stylesheet" href="bootstrap-grid.css">
+	<script type="text/javascript">
+		function validateForm() {
+	var fname=document.forms["feedback"]["fname"].value;
+	var lname=document.forms["feedback"]["lname"].value;
+	
+	var email=document.forms["feedback"]["email"].value;
+	var password=document.forms["feedback"]["pass"].value;
+	var feedback=document.forms["feedback"]["fedback"].value;
+
+
+	if (fname == "" || lname == "" || email == "" || password == "" || feedback == "") {
+		alert("!!Some fields are empty. Please fill all the empty fields!!");
+		return false;
+	}
+	else{
+		alert("Thank you for your feedback");
+		return true;
+	}
+}
+</script>
+
+	
+
+</head>
+<body>
+	<!--Navigation Bar-->
+	<div class="navbar">
+		<ul>
+			<li><a href="#home" class="active">Home</a></li>
+  			<li><a href="gallery.html">Gallery</a></li>
+  			<li><a href="services.html">Services</a></li>
+  			
+  			<li><a href="mee.html">About Me</a></li>
+  			<li><a href="#contact">Contact</a>
+            <ul>
+            	<li><a href="https://www.facebook.com/sanisha.maharjan.56?ref=bookmarks" target="_blank">Facebook</a></li>
+            	<li><a href="https://www.instagram.com/sanisamhrzn/" target="_blank">Instagram</a></li>
+            </ul>
+  			</li></ul>
+  					<div class="text">
+	<h1>HEY!</br> NICE TO MEET YOU</h1>
+					<p>When you do something that you love, you would never get tired of sharpening your skills and getting the best out of you and for others.</p>
+					<p>This is Sanisha Maharjan.</p> 
+				    <p> Favorite things include camping,dancing, travelling and dark chocolate </p>
+		</div>
+			
+	</div>
+
+
+	<!--gallery-->
+			<h1 class="heading"><u>Gallery</u></h1>
+
+	<div class="slider">
+
+		
+	</div>
+</div>
+
+
+
+	<!--About Section-->
+	<div class="about__section">
+		<h1>ABOUT ME</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image__background">
+						<img src="img/user.jpg" >
+					</div>
+				</div>
+				<div class="col-md-8">
+					<h4>HEY! NICE TO MEET YOU</h4>
+					<p>Hailing from a working class family, I am sanisha. I am simple, sweet, confident and cunning fellow</p><p>   I am the students of bachelor.I am currently studying in Nepal College Of Information Technology.</p>
+				    <p> Favorite things include camping,dancing, travelling and dark chocolate </p>
+					<a href="mee.html" class="btn__dark">Know More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+		<div class="sign-up-form">
+		<h1>JOIN US</h1>
+		<form name="feedback" action="" method="post" onsubmit="return validateForm()">
+			First Name:<input type="text" name="fname" class="input-box" placeholder="First Name" />
+			Last Name:<input type="text" name="lname" class="input-box" placeholder="Last Name" /></br>
+			Email:<input type="email" class="input-box" name="email" placeholder="Email here" /></br>
+			Password:<input type="password" class="input-box" name="pass" placeholder="password here"></br>
+			Feedback:<textarea name="fedback"
+			rows="5" cols="10"></textarea>
+			<input type="submit" class="signup-btn" value="Submit">
+	
+		
+		</form>
+	</div>
+
+
+	
+	 <!--footer section-->
+
+
+
+    <footer class="content-footer">
+    <p>Say hi to me on these social networks:</p>
+ 
+    <ul class="social">
+        <li><a href="https://www.facebook.com/sanisha.maharjan.56?ref=bookmarks">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com/sanisamhrzn/">INSTAGRAM</a></li>
+        
+    </ul>
+
+  
+</footer>
+
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+    
+    
+
+    
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<script>
+  var i = 0; // Start point
+  var quotes = [];
+  var time = 5000;
+
+  // Image List
+  quotes[0] = 'quotes/v.jpg';
+  quotes[1] = 'quotes/a.jpg';
+  quotes[2] = 'quotes/x.png';
+  quotes[3] = 'quotes/c.jpg';
+  quotes[4] = 'quotes/d.png';
+  quotes[5] = 'quotes/e.png';
+  quotes[6] = 'quotes/f.jpeg';
+  quotes[7] = 'quotes/g.jpg';
+  quotes[8] = 'quotes/h.jpg';
+  quotes[9] = 'quotes/i.jpg';
+  quotes[10] = 'quotes/j.jpg';
+  quotes[11] = 'quotes/l.jpg';
+  quotes[12] = 'quotes/m.jpg';
+  quotes[13] = 'quotes/n.jpg';
+  quotes[14] = 'quotes/o.jpg';
+  quotes[15] = 'quotes/p.jpg';
+  quotes[16] = 'quotes/q.jpg';
+  quotes[17] = 'quotes/r.jpg';
+  quotes[18] = 'quotes/q.jpg';
+  quotes[19] = 'quotes/s.jpg';
+  quotes[20] = 'quotes/u.jpg';
+  quotes[21] = 'quotes/b.png';
+  quotes[22] = 'quotes/a1.jpg';
+  quotes[23] = 'quotes/w.jpg';
+  quotes[24] = 'quotes/y.jpg';
+  quotes[25] = 'quotes/z.jpg';
+   quotes[25] ='quotes/s.jpg';
+
+  // Change Image
+  function changeImg(){
+    document.quotes1.src = quotes[i];
+
+
+    if(i < quotes.length - 1){
+      i++;
+    } else {
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+  }
+
+  window.onload = changeImg;
+
+</script>
+
+
+<div>
+  <img name="quotes1" width="100%" height="100%" >
+</div>
+
